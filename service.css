@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+:root{
+    --green:rgb(102, 255, 0);
+}
+
+nav {
+    background-color: crimson;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: white;
+    position:fixed;
+    width: 100%;
+}
+img {
+    height: 40px;
+    width: 40px;
+}
+.subMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+    transition: all 0.5s; 
+    
+}
+.subMenu a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: #060606;
+}
+.subMenu a:hover {
+    background-color: aquamarine;
+    color: black;
+}
+.menuIcon {
+    font-size: 25px;
+}
+nav input:hover~.subMenu{
+    background-color: black;
+}
+nav input:checked~.subMenu {
+    background-color: rgb(133, 203, 100);
+    left: 0;
+}
+nav input, nav .menuIcon {
+ display: none;
+}
+@media screen and (max-width:800px) {
+    .subMenu {
+        position: fixed;
+        background-color: rgb(245, 240, 240);
+        left: -100%;
+        top: 0px;
+        height: 70vh;
+        width: 50%;
+        flex-direction: column;
+        justify-content: start;
+        padding: 40px 0px ;
+       
+    }
+    .subMenu a  {
+        font-size: 25px;
+    }
+    nav .menuIcon {
+        display: inline;
+    }
+}
+
+
+.service .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service .box-container .box{
+    text-align: center;
+    width:30rem;
+    margin:2rem;
+}
+
+.service .box-container .box i{
+    font-size: 5rem;
+    color:#aaa;
+    padding:1rem;
+}
+
+.service .box-container .box h3{
+    font-size: 2rem;
+    color:var(--green);
+}
+
+.service .box-container .box p{
+    font-size: 1.5rem;
+    color:#130d0d;
+    padding:1rem 0;
+}
+
+
+
+.heading{
+    text-align: center;
+    padding:1rem;
+    color: var(--green);
+    font-size: 30px;
+    background-color: var(--yellow);
+}

@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+:root{
+    --green:rgb(102, 255, 0);
+}
+
+nav {
+    background-color: crimson;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: white;
+    position:fixed;
+    width: 100%;
+}
+img {
+    height: 40px;
+    width: 40px;
+}
+.subMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+    transition: all 0.5s; 
+    
+}
+.subMenu a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: black;
+}
+.subMenu a:hover {
+    background-color: aquamarine;
+    color: black;
+}
+.menuIcon {
+    font-size: 25px;
+}
+/* nav input:hover~.subMenu{
+    background-color: black;
+} */
+nav input:checked~.subMenu {
+    /* background-color: #53dc14; */
+    left: 0;
+}
+nav input, nav .menuIcon {
+ display: none;
+}
+@media screen and (max-width:800px) {
+    .subMenu {
+        position: fixed;
+        background-color: rgb(245, 240, 240);
+        left: -100%;
+        top: 70px;
+        height: 70vh;
+        width: 30%;
+        flex-direction: column;
+        justify-content: start;
+        padding: 40px 0px 0px;
+       
+    }
+    .subMenu a  {
+        font-size: 25px;
+    }
+    nav .menuIcon {
+        display: inline;
+    }
+}
+
+.btn{
+    background-color: chartreuse;
+    color: black;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+
+    .heading{
+        text-align: center;
+        padding:1rem;
+        color: var(--green);
+        font-size: 30px;
+        background-color: var(--yellow);
+        margin-top: 40px;
+    }
+    .review{
+       padding: 70px;
+    }
+
+    .review .box-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .review .box-container .box{
+        margin:2rem;
+        padding:1rem;
+        flex:1 1 35rem;
+    }
+    
+    .review .box-container .box .info{
+        padding:1rem 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .review .box-container .box .info img{
+        height:7rem;
+        width:7rem;
+        object-fit: cover;
+        border:.5rem solid var(--green);
+        border-radius: 50%;
+    }
+    
+    .review .box-container .box .info .user{
+        padding-left: 1rem;
+    }
+    
+    .review .box-container .box .info .user h3{
+        font-size: 2rem;
+        color:var(--green);
+    }
+    
+    .review .box-container .box .info .user span{
+        font-size: 1.5rem;
+        color:#666;
+    }
+    
+    .review .box-container .box p{
+        font-size: 1.5rem;
+        color:#999;
+    }
