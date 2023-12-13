@@ -50,7 +50,7 @@ img {
     background-color: black;
 } */
 nav input:checked~.subMenu {
-    /* background-color: #53dc14; */
+    background-color: #53dc14;
     left: 0;
 }
 nav input, nav .menuIcon {
@@ -63,7 +63,7 @@ nav input, nav .menuIcon {
         left: -100%;
         top: 70px;
         height: 70vh;
-        width: 30%;
+        width: 50%;
         flex-direction: column;
         justify-content: start;
         padding: 40px 0px 0px;
